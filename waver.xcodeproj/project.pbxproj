@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1B4CB66505DC6F38FAA16CF8 /* Pods_waverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B550A61DBF30CB7CB3D45341 /* Pods_waverTests.framework */; };
 		3C7C8BF67F765D002071D0CF /* Pods_waver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C865B052ACD13EEDD252D89C /* Pods_waver.framework */; };
+		C531E79C20347A340093788E /* waver-dev_firebase.plist in Resources */ = {isa = PBXBuildFile; fileRef = C531E79B20347A340093788E /* waver-dev_firebase.plist */; };
 		C568E96A20346A2900BD2CDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568E96920346A2900BD2CDF /* AppDelegate.swift */; };
 		C568E96C20346A2900BD2CDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568E96B20346A2900BD2CDF /* ViewController.swift */; };
 		C568E96F20346A2900BD2CDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C568E96D20346A2900BD2CDF /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		4D2206111EC343642973CBF3 /* Pods-waverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waverTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-waverTests/Pods-waverTests.release.xcconfig"; sourceTree = "<group>"; };
 		A43B2E42D1D4D8D7F0673BB3 /* Pods-waverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waverTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-waverTests/Pods-waverTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B550A61DBF30CB7CB3D45341 /* Pods_waverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_waverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C531E79B20347A340093788E /* waver-dev_firebase.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "waver-dev_firebase.plist"; sourceTree = "<group>"; };
 		C568E96620346A2900BD2CDF /* waver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = waver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C568E96920346A2900BD2CDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C568E96B20346A2900BD2CDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C531E79A20347A140093788E /* cert */ = {
+			isa = PBXGroup;
+			children = (
+				C531E79B20347A340093788E /* waver-dev_firebase.plist */,
+			);
+			path = cert;
+			sourceTree = "<group>";
+		};
 		C568E95D20346A2900BD2CDF = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +110,7 @@
 		C568E96820346A2900BD2CDF /* waver */ = {
 			isa = PBXGroup;
 			children = (
+				C531E79A20347A140093788E /* cert */,
 				C568E96920346A2900BD2CDF /* AppDelegate.swift */,
 				C568E96B20346A2900BD2CDF /* ViewController.swift */,
 				C568E96D20346A2900BD2CDF /* Main.storyboard */,
@@ -218,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C568E97420346A2900BD2CDF /* LaunchScreen.storyboard in Resources */,
+				C531E79C20347A340093788E /* waver-dev_firebase.plist in Resources */,
 				C568E97120346A2900BD2CDF /* Assets.xcassets in Resources */,
 				C568E96F20346A2900BD2CDF /* Main.storyboard in Resources */,
 			);
@@ -409,6 +421,89 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C531E79D20347C520093788E /* Release Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Production";
+		};
+		C531E79E20347C520093788E /* Release Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEF943F47219885563A9ADED /* Pods-waver.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = waver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.waver.waver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release Production";
+		};
+		C531E79F20347C520093788E /* Release Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D2206111EC343642973CBF3 /* Pods-waverTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = waverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.waver.waverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/waver.app/waver";
+			};
+			name = "Release Production";
+		};
 		C568E98120346A2900BD2CDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -461,7 +556,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEVELOP;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -511,6 +606,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = ALPHA;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -588,6 +684,7 @@
 			buildConfigurations = (
 				C568E98120346A2900BD2CDF /* Debug */,
 				C568E98220346A2900BD2CDF /* Release */,
+				C531E79D20347C520093788E /* Release Production */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -597,6 +694,7 @@
 			buildConfigurations = (
 				C568E98420346A2900BD2CDF /* Debug */,
 				C568E98520346A2900BD2CDF /* Release */,
+				C531E79E20347C520093788E /* Release Production */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -606,6 +704,7 @@
 			buildConfigurations = (
 				C568E98720346A2900BD2CDF /* Debug */,
 				C568E98820346A2900BD2CDF /* Release */,
+				C531E79F20347C520093788E /* Release Production */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
