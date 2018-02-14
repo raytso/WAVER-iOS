@@ -6,7 +6,14 @@
 //  Copyright © 2018 waver. All rights reserved.
 //
 
+#if ALPHA || DEVELOP
+    let firebasePlistFileName = "waver-dev_firebase"
+#else
+    let firebasePlistFileName = "waver-prod_firebase"
+#endif
+
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let firbaseOptions = FirebaseOptions(contentsOfFile: Bundle.main.path(forResource: "cert/" + firebasePlistFileName, ofType: "plist")!)
+        FirebaseApp.configure(options: firbaseOptions!)
+        
         return true
     }
 
