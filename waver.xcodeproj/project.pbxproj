@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1B4CB66505DC6F38FAA16CF8 /* Pods_waverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B550A61DBF30CB7CB3D45341 /* Pods_waverTests.framework */; };
 		3C7C8BF67F765D002071D0CF /* Pods_waver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C865B052ACD13EEDD252D89C /* Pods_waver.framework */; };
+		C531E7A52034832F0093788E /* DatabaseManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C531E7A42034832F0093788E /* DatabaseManagerProtocol.swift */; };
+		C531E7A7203483810093788E /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C531E7A6203483810093788E /* FirebaseManager.swift */; };
 		C53A55FA2035E21E008B26C2 /* waver-dev_firebase.plist in Resources */ = {isa = PBXBuildFile; fileRef = C531E79B20347A340093788E /* waver-dev_firebase.plist */; };
 		C568E96A20346A2900BD2CDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568E96920346A2900BD2CDF /* AppDelegate.swift */; };
 		C568E96C20346A2900BD2CDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568E96B20346A2900BD2CDF /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 		C568E97120346A2900BD2CDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C568E97020346A2900BD2CDF /* Assets.xcassets */; };
 		C568E97420346A2900BD2CDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C568E97220346A2900BD2CDF /* LaunchScreen.storyboard */; };
 		C568E97F20346A2900BD2CDF /* waverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568E97E20346A2900BD2CDF /* waverTests.swift */; };
+		C5C58B6F2036A92B00D9FD36 /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C58B6E2036A92B00D9FD36 /* ItemType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,8 @@
 		A43B2E42D1D4D8D7F0673BB3 /* Pods-waverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waverTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-waverTests/Pods-waverTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B550A61DBF30CB7CB3D45341 /* Pods_waverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_waverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C531E79B20347A340093788E /* waver-dev_firebase.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "waver-dev_firebase.plist"; sourceTree = "<group>"; };
+		C531E7A42034832F0093788E /* DatabaseManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManagerProtocol.swift; sourceTree = "<group>"; };
+		C531E7A6203483810093788E /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		C568E96620346A2900BD2CDF /* waver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = waver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C568E96920346A2900BD2CDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C568E96B20346A2900BD2CDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +48,7 @@
 		C568E97A20346A2900BD2CDF /* waverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = waverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C568E97E20346A2900BD2CDF /* waverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waverTests.swift; sourceTree = "<group>"; };
 		C568E98020346A2900BD2CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5C58B6E2036A92B00D9FD36 /* ItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemType.swift; sourceTree = "<group>"; };
 		C865B052ACD13EEDD252D89C /* Pods_waver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_waver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B9C57B4DE66BEC147A0F5C /* Pods-waver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-waver/Pods-waver.debug.xcconfig"; sourceTree = "<group>"; };
 		FEF943F47219885563A9ADED /* Pods-waver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waver.release.xcconfig"; path = "Pods/Target Support Files/Pods-waver/Pods-waver.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,9 +85,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C531E7A3203482FC0093788E /* DatabaseManagers */ = {
 			isa = PBXGroup;
 			children = (
+				C531E7A42034832F0093788E /* DatabaseManagerProtocol.swift */,
+				C531E7A6203483810093788E /* FirebaseManager.swift */,
 			);
+			path = DatabaseManagers;
 			sourceTree = "<group>";
 		};
 		C568E95D20346A2900BD2CDF = {
@@ -107,6 +117,8 @@
 		C568E96820346A2900BD2CDF /* waver */ = {
 			isa = PBXGroup;
 			children = (
+				C5C58B6D2036A90E00D9FD36 /* Model */,
+				C531E7A3203482FC0093788E /* DatabaseManagers */,
 				C568E96920346A2900BD2CDF /* AppDelegate.swift */,
 				C568E96B20346A2900BD2CDF /* ViewController.swift */,
 				C568E96D20346A2900BD2CDF /* Main.storyboard */,
@@ -125,6 +137,14 @@
 				C568E98020346A2900BD2CDF /* Info.plist */,
 			);
 			path = waverTests;
+			sourceTree = "<group>";
+		};
+		C5C58B6D2036A90E00D9FD36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5C58B6E2036A92B00D9FD36 /* ItemType.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DB6754DF9875D86455D4CF32 /* Frameworks */ = {
@@ -375,8 +395,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C531E7A52034832F0093788E /* DatabaseManagerProtocol.swift in Sources */,
+				C5C58B6F2036A92B00D9FD36 /* ItemType.swift in Sources */,
 				C568E96C20346A2900BD2CDF /* ViewController.swift in Sources */,
 				C568E96A20346A2900BD2CDF /* AppDelegate.swift in Sources */,
+				C531E7A7203483810093788E /* FirebaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
