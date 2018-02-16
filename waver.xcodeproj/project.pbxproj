@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1B4CB66505DC6F38FAA16CF8 /* Pods_waverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B550A61DBF30CB7CB3D45341 /* Pods_waverTests.framework */; };
 		3C7C8BF67F765D002071D0CF /* Pods_waver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C865B052ACD13EEDD252D89C /* Pods_waver.framework */; };
-		C531E79C20347A340093788E /* waver-dev_firebase.plist in Resources */ = {isa = PBXBuildFile; fileRef = C531E79B20347A340093788E /* waver-dev_firebase.plist */; };
+		C53A55FA2035E21E008B26C2 /* waver-dev_firebase.plist in Resources */ = {isa = PBXBuildFile; fileRef = C531E79B20347A340093788E /* waver-dev_firebase.plist */; };
 		C568E96A20346A2900BD2CDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568E96920346A2900BD2CDF /* AppDelegate.swift */; };
 		C568E96C20346A2900BD2CDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568E96B20346A2900BD2CDF /* ViewController.swift */; };
 		C568E96F20346A2900BD2CDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C568E96D20346A2900BD2CDF /* Main.storyboard */; };
@@ -79,12 +79,9 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C531E79A20347A140093788E /* cert */ = {
 			isa = PBXGroup;
 			children = (
-				C531E79B20347A340093788E /* waver-dev_firebase.plist */,
 			);
-			path = cert;
 			sourceTree = "<group>";
 		};
 		C568E95D20346A2900BD2CDF = {
@@ -110,13 +107,13 @@
 		C568E96820346A2900BD2CDF /* waver */ = {
 			isa = PBXGroup;
 			children = (
-				C531E79A20347A140093788E /* cert */,
 				C568E96920346A2900BD2CDF /* AppDelegate.swift */,
 				C568E96B20346A2900BD2CDF /* ViewController.swift */,
 				C568E96D20346A2900BD2CDF /* Main.storyboard */,
 				C568E97020346A2900BD2CDF /* Assets.xcassets */,
 				C568E97220346A2900BD2CDF /* LaunchScreen.storyboard */,
 				C568E97520346A2900BD2CDF /* Info.plist */,
+				C531E79B20347A340093788E /* waver-dev_firebase.plist */,
 			);
 			path = waver;
 			sourceTree = "<group>";
@@ -229,9 +226,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C568E97420346A2900BD2CDF /* LaunchScreen.storyboard in Resources */,
-				C531E79C20347A340093788E /* waver-dev_firebase.plist in Resources */,
 				C568E97120346A2900BD2CDF /* Assets.xcassets in Resources */,
 				C568E96F20346A2900BD2CDF /* Main.storyboard in Resources */,
+				C53A55FA2035E21E008B26C2 /* waver-dev_firebase.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

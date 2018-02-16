@@ -23,8 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let firbaseOptions = FirebaseOptions(contentsOfFile: Bundle.main.path(forResource: "cert/" + firebasePlistFileName, ofType: "plist")!)
-        FirebaseApp.configure(options: firbaseOptions!)
+        
+        let firebaseOptions = FirebaseOptions(contentsOfFile: Bundle.main.path(forResource: firebasePlistFileNamet, ofType: "plist")!)
+        FirebaseConfiguration.shared.setLoggerLevel(.min)
+        FirebaseApp.configure(options: firebaseOptions!)
         
         return true
     }
