@@ -33,7 +33,9 @@
 
 /* Begin PBXFileReference section */
 		4D2206111EC343642973CBF3 /* Pods-waverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waverTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-waverTests/Pods-waverTests.release.xcconfig"; sourceTree = "<group>"; };
+		5C012D621F280C1E990109A8 /* Pods-waver.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waver.release production.xcconfig"; path = "Pods/Target Support Files/Pods-waver/Pods-waver.release production.xcconfig"; sourceTree = "<group>"; };
 		A43B2E42D1D4D8D7F0673BB3 /* Pods-waverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waverTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-waverTests/Pods-waverTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA708134A679F5CD3472914E /* Pods-waverTests.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waverTests.release production.xcconfig"; path = "Pods/Target Support Files/Pods-waverTests/Pods-waverTests.release production.xcconfig"; sourceTree = "<group>"; };
 		B550A61DBF30CB7CB3D45341 /* Pods_waverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_waverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C531E79B20347A340093788E /* waver-dev_firebase.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "waver-dev_firebase.plist"; sourceTree = "<group>"; };
 		C531E7A42034832F0093788E /* DatabaseManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManagerProtocol.swift; sourceTree = "<group>"; };
@@ -81,6 +83,8 @@
 				FEF943F47219885563A9ADED /* Pods-waver.release.xcconfig */,
 				A43B2E42D1D4D8D7F0673BB3 /* Pods-waverTests.debug.xcconfig */,
 				4D2206111EC343642973CBF3 /* Pods-waverTests.release.xcconfig */,
+				5C012D621F280C1E990109A8 /* Pods-waver.release production.xcconfig */,
+				AA708134A679F5CD3472914E /* Pods-waverTests.release production.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -284,11 +288,35 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-waverTests/Pods-waverTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
@@ -494,7 +522,7 @@
 		};
 		C531E79E20347C520093788E /* Release Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEF943F47219885563A9ADED /* Pods-waver.release.xcconfig */;
+			baseConfigurationReference = 5C012D621F280C1E990109A8 /* Pods-waver.release production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -509,7 +537,7 @@
 		};
 		C531E79F20347C520093788E /* Release Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D2206111EC343642973CBF3 /* Pods-waverTests.release.xcconfig */;
+			baseConfigurationReference = AA708134A679F5CD3472914E /* Pods-waverTests.release production.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
